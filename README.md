@@ -1,5 +1,5 @@
 # The Plant Shop
-brief descirption
+The aim of the plantshop is to sell plants
 
 - **Important Info**
   
