@@ -1,5 +1,5 @@
 # The Plant Shop
-The aim of the plantshop is to sell plants
+The aim of the plantshop is to sell House Plants
 
 - **Important Info**
    - Currently, hosting will be done on github pages (free) and the domain is plantshop.shop (£2.20)
