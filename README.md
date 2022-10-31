@@ -6,15 +6,15 @@ The aim of the plantshop is to sell plants
 <br>
 
 - **Useful documentation:**
-
+   - None yet
 <br>
 
 - **Current Issues:**
-
+   - Many
 <br>
 
 - **Requirements**
-
+   - UK delivery only 
 <br>
 
 - **Legal**
