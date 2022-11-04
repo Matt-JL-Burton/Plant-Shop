@@ -11,7 +11,7 @@ The aim of the plantshop is to sell House Plants
 <br>
 
 - **Current Issues:**
-   - Many
+   - Many plant retailers have a delivery fee, this will reduce profits when there is low volume sales.
 <br>
 
 - **Requirements**
