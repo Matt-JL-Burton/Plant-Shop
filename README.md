@@ -24,3 +24,4 @@ The aim of the plantshop is to sell House Plants
     - The name of the creator is Aaron P Brown
     - His profile for where I (Matthew) found the logo can be found here https://thenounproject.com/aaronpbrown/
     - Aaron P Brown's personal website can be found here http://www.aaronpierrebrown.com/
+    - We may wish to use Raj's logo if legal (need to find out)
