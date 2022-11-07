@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="browse.css">
+    <script src="https://kit.fontawesome.com/7d8f1910d8.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</head>
+
+<body id="body">
+    <section>
+        <nav>
+            <div class="nav__container">
+                <a class="logo" href="index.html">    
+                    <img class="logo__img" src="./assets/logo.svg" alt="">
+                    <span class="logo__text">Plant Shop</span>
+                </a>
+                <ul class="nav__links">
+                    <li><a class="nav__link" href="about.html">About</a></li>
+                    <li><a class="nav__link" href="browse.html">Browse</a></li>
+                    <li>
+                        <a class="nav__link nav__cart" href="">
+                            <i class="fas fa-cart-shopping" aria-hidden="true"></i>
+                            <div class="basket__items--container">
+                                <p class="basket__items--text">5</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <button class="btn menu__btn" onclick="openMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="menu" id="menu">
+                    <button class="menu__btn--close" onclick="closeMenu()"><i class="fas fa-times"></i></button>
+                    <ul class="menu__links">
+                        <li class="menu__link--list"><a class="menu__link" onclick="closeMenu()" href="#header">About</a></li>
+                        <li class="menu__link--list"><a class="menu__link" onclick="closeMenu()" href="#featured">Browse</a></li>
+                        <li class="menu__link--list"><a class="menu__link" onclick="closeMenu()" href="">Basket</a></li>
+                    </ul>
+                    <div class="img__container--menu">
+                        <img class="logo__img" src="./assets/logo.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <main>
+        <div class="browse-container">
+            <div class="browse-row">
+                <h1 class="section-title">Browse</h1>
+                <div class="browse__header">
+                    <p>Sort:</p>
+                    <select class="browse__drop-down-menu" name="" id="">
+                        <option value="default">Default</option>
+                        <option value="low-to-high">Low to High</option>
+                        <option value="high-to-low">High to Low</option>
+                    </select>
+                </div>
+                <div class="plants__wrapper">
+                    <div class="plant__card clickable" onclick="showPlant()">
+                        <figure class="plant__img--container">
+                            <img class="plant__img" src="./assets/peace-lily.png" alt="">
+                        </figure>
+                        <h3 class="plant__title">Peace Lily</h3>
+                        <h4 class="plant__price">£19.99</h4>
+                    </div>
+                    <div class="plant__card clickable" onclick="showPlant()">
+                        <figure class="plant__img--container">
+                            <img class="plant__img" src="./assets/areca-palm.png" alt="">
+                        </figure>
+                        <h3 class="plant__title">Areca Palm</h3>
+                        <h4 class="plant__price">£19.99</h4>
+                    </div>
+                    <div class="plant__card clickable" onclick="showPlant()">
+                        <figure class="plant__img--container">
+                            <img class="plant__img" src="./assets/swiss-cheese-plant.png" alt="">
+                        </figure>
+                        <h3 class="plant__title">Swiss Cheese Plant</h3>
+                        <h4 class="plant__price">£19.99</h4>
+                    </div>
+                    <div class="plant__card clickable" onclick="showPlant()">
+                        <figure class="plant__img--container">
+                            <img class="plant__img" src="./assets/kentia-palm.png" alt="">
+                        </figure>
+                        <h3 class="plant__title">Kentia P</h3>
+                        <h4 class="plant__price">£19.99</h4>
+                    </div>
+                    <div class="plant__card clickable" onclick="showPlant()">
+                        <figure class="plant__img--container">
+                            <img class="plant__img" src="./assets/peace-lily.png" alt="">
+                        </figure>
+                        <h3 class="plant__title">Peace Lily</h3>
+                        <h4 class="plant__price">£19.99</h4>
+                    </div>
+                    <div class="plant__card clickable" onclick="showPlant()">
+                        <figure class="plant__img--container">
+                            <img class="plant__img" src="./assets/areca-palm.png" alt="">
+                        </figure>
+                        <h3 class="plant__title">Areca Palm</h3>
+                        <h4 class="plant__price">£19.99</h4>
+                    </div>
+                    <div class="plant__card clickable" onclick="showPlant()">
+                        <figure class="plant__img--container">
+                            <img class="plant__img" src="./assets/swiss-cheese-plant.png" alt="">
+                        </figure>
+                        <h3 class="plant__title">Swiss Cheese Plant</h3>
+                        <h4 class="plant__price">£19.99</h4>
+                    </div>
+                    <div class="plant__card clickable" onclick="showPlant()">
+                        <figure class="plant__img--container">
+                            <img class="plant__img" src="./assets/kentia-palm.png" alt="">
+                        </figure>
+                        <h3 class="plant__title">Kentia P</h3>
+                        <h4 class="plant__price">£19.99</h4>
+                    </div>
+                    <div class="plant__card clickable" onclick="showPlant()">
+                        <figure class="plant__img--container">
+                            <img class="plant__img" src="./assets/peace-lily.png" alt="">
+                        </figure>
+                        <h3 class="plant__title">Peace Lily</h3>
+                        <h4 class="plant__price">£19.99</h4>
+                    </div>
+                    <div class="plant__card clickable" onclick="showPlant()">
+                        <figure class="plant__img--container">
+                            <img class="plant__img" src="./assets/areca-palm.png" alt="">
+                        </figure>
+                        <h3 class="plant__title">Areca Palm</h3>
+                        <h4 class="plant__price">£19.99</h4>
+                    </div>
+                    <div class="plant__card clickable" onclick="showPlant()">
+                        <figure class="plant__img--container">
+                            <img class="plant__img" src="./assets/swiss-cheese-plant.png" alt="">
+                        </figure>
+                        <h3 class="plant__title">Swiss Cheese Plant</h3>
+                        <h4 class="plant__price">£19.99</h4>
+                    </div>
+                    <div class="plant__card clickable" onclick="showPlant()">
+                        <figure class="plant__img--container">
+                            <img class="plant__img" src="./assets/kentia-palm.png" alt="">
+                        </figure>
+                        <h3 class="plant__title">Kentia P</h3>
+                        <h4 class="plant__price">£19.99</h4>
+                    </div>
+                    <div class="plant__card clickable" onclick="showPlant()">
+                        <figure class="plant__img--container">
+                            <img class="plant__img" src="./assets/peace-lily.png" alt="">
+                        </figure>
+                        <h3 class="plant__title">Peace Lily</h3>
+                        <h4 class="plant__price">£19.99</h4>
+                    </div>
+                    <div class="plant__card clickable" onclick="showPlant()">
+                        <figure class="plant__img--container">
+                            <img class="plant__img" src="./assets/areca-palm.png" alt="">
+                        </figure>
+                        <h3 class="plant__title">Areca Palm</h3>
+                        <h4 class="plant__price">£19.99</h4>
+                    </div>
+                    <div class="plant__card clickable" onclick="showPlant()">
+                        <figure class="plant__img--container">
+                            <img class="plant__img" src="./assets/swiss-cheese-plant.png" alt="">
+                        </figure>
+                        <h3 class="plant__title">Swiss Cheese Plant</h3>
+                        <h4 class="plant__price">£19.99</h4>
+                    </div>
+                    <div class="plant__card clickable" onclick="showPlant()">
+                        <figure class="plant__img--container">
+                            <img class="plant__img" src="./assets/kentia-palm.png" alt="">
+                        </figure>
+                        <h3 class="plant__title">Kentia P</h3>
+                        <h4 class="plant__price">£19.99</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<footer>
+    <section id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer__container">
+                    <img class="footer__img" src="./assets/logo.svg" alt="">
+                    <hr class="line-break">
+                    <div class="footer__links">
+                        <a class="footer__link" href="index.html">Home</a>
+                        <a class="footer__link" href="about.html">About Us</a>
+                        <a class="footer__link" href="">FAQ</a>
+                        <a class="footer__link" href="">Terms and Conditions</a>
+                        <a class="footer__link" href="">Contact Us</a>
+                    </div>
+                    <p class="footer__para">Copyright © 2022 - Plant Shop</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</footer>

@@ -1,0 +1,39 @@
+#body{
+    background-color: #d0e9cc;
+}
+
+select{
+    border: 1px solid rgb(136, 136, 136);
+    background-color: white;
+    padding: 2px 4px;
+
+}
+
+.browse-container{
+    margin: 16px 0 32px;
+}
+
+.browse-row{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 24px;
+    padding: 24px 0;
+}
+
+.browse__header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+p{
+    font-size: 20px;
+}
+
+.browse__drop-down-menu{
+    margin: 0 80px 0 8px;
+    font-size: 16px;
+}
