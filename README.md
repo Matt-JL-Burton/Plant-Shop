@@ -20,4 +20,4 @@ The aim of the plantshop is to sell House Plants
 
 - **Legal**
   - Logo 
-    - Using Aarons Logo
+    - Using Raj's Logo
