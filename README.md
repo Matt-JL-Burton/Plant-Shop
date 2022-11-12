@@ -22,3 +22,5 @@ The aim of the plantshop is to sell House Plants
 - **Legal**
   - Logo 
     - Using Raj's Logo
+ - Plant Names
+   - In the database many of the pot names are likely Intellectual Property so we can't use them
