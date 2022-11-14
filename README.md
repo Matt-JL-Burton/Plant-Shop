@@ -3,6 +3,7 @@ The aim of the plantshop is to sell House Plants
 
 - **Important Info**
    - Currently, hosting will be done on github pages (free) and the domain is plantshop.shop (£2.20)
+      - To see login for the domain site see the private repo   
    - I have found plants to supply 
    - For database, <b>Monetary values are measured in pence</b>, size is measured in cm 
 <br>
