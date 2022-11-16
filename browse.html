@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/logo.svg">
     <title>Plant Shop</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="browse.css">
@@ -36,14 +37,20 @@
                     <i class="fas fa-bars"></i>
                 </button>
                 <div class="menu" id="menu">
-                    <button class="menu__btn--close" onclick="closeMenu()"><i class="fas fa-times"></i></button>
-                    <ul class="menu__links">
-                        <li class="menu__link--list"><a class="menu__link" onclick="closeMenu()" href="#header">About</a></li>
-                        <li class="menu__link--list"><a class="menu__link" onclick="closeMenu()" href="#featured">Browse</a></li>
-                        <li class="menu__link--list"><a class="menu__link" onclick="closeMenu()" href="">Basket</a></li>
-                    </ul>
-                    <div class="img__container--menu">
-                        <img class="logo__img" src="./assets/logo.svg" alt="">
+                    <div class="menu__empty" onclick="closeMenu()"></div>
+                    <div class="menu__overlay">
+                        <button class="menu__btn--close" onclick="closeMenu()"><i class="fas fa-times"></i></button>
+                        <ul class="menu__links">
+                            <li class="menu__link--list"><a class="menu__link" onclick="closeMenu()"
+                                    href="#header">About</a></li>
+                            <li class="menu__link--list"><a class="menu__link" onclick="closeMenu()"
+                                    href="#featured">Browse</a></li>
+                            <li class="menu__link--list"><a class="menu__link" onclick="closeMenu()" href="">Basket</a>
+                            </li>
+                        </ul>
+                        <div class="img__container--menu">
+                            <img class="logo__img" src="./assets/logo.svg" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
