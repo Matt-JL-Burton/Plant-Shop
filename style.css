@@ -174,6 +174,7 @@ button:active{
     border-width: 0;
     border-radius: 16px;
     transition: background-color 200ms ease;
+    color: white;
 }
 
 .btn:hover{
@@ -186,29 +187,37 @@ button:active{
     align-self: center;
     padding: 8px 15px;
     margin: 10px 16px;
-    background-color: #59a754;
+    background-color: #93d28e;
     color: #172716;
     border-width: 0;
-    border-radius: 16px;
+    border-radius: 4px;
     transition: background-color 200ms ease;
 }
 
 .menu{
     display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: #232323;
     position: fixed;
     overflow-y: hidden;
     top: 0;
     right: 0;
     bottom: 0;
-    width: 60vw;
-    max-width: 400px;
+    width: 100vw;
     z-index: 2;
     animation: showMenu 300ms normal;
+}
+
+.menu__empty{
+    width: 30%;
+}
+
+.menu__overlay{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #232323;
     padding: 24px 48px;
 }
 
@@ -220,7 +229,7 @@ button:active{
 }
 
 @keyframes showMenu{
-    0%{ transform: translateX(60vw); }
+    0%{ transform: translateX(100vw); }
     100% { transform: translateX(0); }
 }
 
@@ -479,6 +488,64 @@ button:active{
     transition: display 300ms ease;
 }
 
+#product{
+    background-color: #d0e9cc;
+}
+
+.product__container{
+    background-color: white;
+    padding: 48px 40px;
+    border-radius: 16px;
+    display: flex;
+    margin: 0 16px;
+}
+
+.product__img--wrapper{
+    margin-right: 64px;
+    max-width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.product__img{
+    object-fit: cover;
+    object-position: center center;
+    width: 100%;
+
+}
+
+.product__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+.product__title{
+    font-size: 32px;
+    margin-bottom: 32px;
+}
+
+.product__price{
+    font-size: 32px;
+    color: #7e7e7e;
+    margin-bottom: 16px;
+    font-weight: 700;
+    margin-left: 16px;
+}
+
+.product__desc{
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.w-100{
+    width: 100%;
+}
+
+
 @media (max-width: 591px) {
     .nav__links{
         display: none;
@@ -511,4 +578,21 @@ button:active{
     .back-to-top{
         right: 40px;
     }
+
+    .product__container{
+        flex-direction: column;
+    }
+
+    .product__img--wrapper{
+        width: 80%;
+        margin: 0 auto;
+        max-width: 250px;
+    }
+
+    .product__info{
+        width: 100%;
+        margin-top: 64px;
+        padding: 0 32px;
+    }
 }
+
