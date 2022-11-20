@@ -13,7 +13,6 @@ The aim of the plantshop is to sell House Plants
 
 - **Current Issues:**
    - Many plant retailers have a delivery fee, this will reduce profits when there is low volume sales.
-   - No SSL certificate or plan on how to get one
 ---
 - **Requirements**
    - UK delivery only 
