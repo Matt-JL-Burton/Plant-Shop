@@ -13,6 +13,7 @@ The aim of the plantshop is to sell House Plants
 
 - **Current Issues:**
    - Many plant retailers have a delivery fee, this will reduce profits when there is low volume sales.
+   - Still need to decide on payment processor to use, I have decided it is best to use one of stripe, square or Paypal
 ---
 - **Requirements**
    - UK delivery only 
