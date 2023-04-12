@@ -6,6 +6,7 @@ The aim of the plantshop is to sell House Plants
       - To see login for the domain site see the private repo   
    - I have found plants to supply 
    - For database, <b>Monetary values are measured in pence</b>, size is measured in cm 
+   - Using stripe for payment handling.
 ---
 - **Useful documentation:**
    - None yet
