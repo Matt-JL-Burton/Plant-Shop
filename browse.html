@@ -11,51 +11,21 @@
     <link rel="stylesheet" href="browse.css">
     <script src="https://kit.fontawesome.com/7d8f1910d8.js" crossorigin="anonymous"></script>
     <script src="app.js"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+    </script>
+    <script> 
+    $(function(){
+    $("#header").load("header.html"); 
+    $("#footer").load("footer.html"); 
+    });
+    </script> 
 </head>
 
 <body id="body">
-    <section>
-        <nav>
-            <div class="nav__container">
-                <a class="logo" href="index.html">    
-                    <img class="logo__img" src="./assets/logo.svg" alt="">
-                    <span class="logo__text">Plant Shop</span>
-                </a>
-                <ul class="nav__links">
-                    <li><a class="nav__link" href="about.html">About</a></li>
-                    <li><a class="nav__link" href="browse.html">Browse</a></li>
-                    <li>
-                        <a class="nav__link nav__cart" href="">
-                            <i class="fas fa-cart-shopping" aria-hidden="true"></i>
-                            <div class="basket__items--container">
-                                <p class="basket__items--text">5</p>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-                <button class="btn menu__btn" onclick="openMenu()">
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="menu" id="menu">
-                    <div class="menu__empty" onclick="closeMenu()"></div>
-                    <div class="menu__overlay">
-                        <button class="menu__btn--close" onclick="closeMenu()"><i class="fas fa-times"></i></button>
-                        <ul class="menu__links">
-                            <li class="menu__link--list"><a class="menu__link" onclick="closeMenu()"
-                                    href="#header">About</a></li>
-                            <li class="menu__link--list"><a class="menu__link" onclick="closeMenu()"
-                                    href="#featured">Browse</a></li>
-                            <li class="menu__link--list"><a class="menu__link" onclick="closeMenu()" href="">Basket</a>
-                            </li>
-                        </ul>
-                        <div class="img__container--menu">
-                            <img class="logo__img" src="./assets/logo.svg" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </section>
+    <div id="header"></div>
     <main>
         <div class="browse-container">
             <div class="browse-row">
@@ -185,24 +155,5 @@
             </div>
         </div>
     </main>
+    <div id="footer"></div>
 </body>
-<footer>
-    <section id="footer">
-        <div class="container">
-            <div class="row">
-                <div class="footer__container">
-                    <img class="footer__img" src="./assets/logo.svg" alt="">
-                    <hr class="line-break">
-                    <div class="footer__links">
-                        <a class="footer__link" href="index.html">Home</a>
-                        <a class="footer__link" href="about.html">About Us</a>
-                        <a class="footer__link" href="">FAQ</a>
-                        <a class="footer__link" href="">Terms and Conditions</a>
-                        <a class="footer__link" href="">Contact Us</a>
-                    </div>
-                    <p class="footer__para">Copyright © 2022 - Plant Shop</p>
-                </div>
-            </div>
-        </div>
-    </section>
-</footer>
