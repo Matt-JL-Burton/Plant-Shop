@@ -8,6 +8,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    border: red solid 10px;
 }
 
 html{
@@ -27,11 +28,22 @@ body{
     background-color: #d0e9cc;
 }
 
+#mainCheckoutDiv{
+    width:  50px;
+    height: 60px;
+    background: green;
+    color: red;
+}
+
 nav{
     display: flex;
     height: 80px;
     justify-content: center;
     background-color: #d0e9cc;
+}
+
+.border{
+    border: red 10px solid;
 }
 
 .nav__container{
@@ -545,7 +557,6 @@ button:active{
     width: 100%;
 }
 
-
 @media (max-width: 591px) {
     .nav__links{
         display: none;
@@ -594,5 +605,6 @@ button:active{
         margin-top: 64px;
         padding: 0 32px;
     }
+
 }
 
