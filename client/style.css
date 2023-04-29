@@ -8,7 +8,6 @@
     padding: 0;
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    border: red solid 10px;
 }
 
 html{
@@ -28,13 +27,6 @@ body{
     background-color: #d0e9cc;
 }
 
-#mainCheckoutDiv{
-    width:  50px;
-    height: 60px;
-    background: green;
-    color: red;
-}
-
 nav{
     display: flex;
     height: 80px;
@@ -43,7 +35,7 @@ nav{
 }
 
 .border{
-    border: red 10px solid;
+    border: red 1px solid;
 }
 
 .nav__container{
@@ -557,6 +549,82 @@ button:active{
     width: 100%;
 }
 
+.mainCheckoutDiv{
+    margin: auto;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.basketBlock{
+    width: 100%;
+    margin-left: 20px;
+}
+
+.DPRBlock{
+    padding: 10px;
+    width: 100%;
+}
+
+.checkOutPageSection{
+    border-radius: 3px;
+    background-color: white;
+}
+
+.checkOutMain{
+    background-color: #d0e9cc;
+    padding: 0px 20px 20px 20px;
+}
+
+.deliveryDetailsContainerBox{
+    background-color: rgb(242, 244, 241);
+    border-radius: 3px;
+}
+
+.deliveryMultiLine{
+    display: flex;
+    width: 100%;
+}
+
+.deliverySingleLine{
+    margin: auto;
+}
+
+.deliveryDetailBox{
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+}
+
+.deliveryInput{
+    width: 100%;
+    padding: 10px;
+    border-radius: 0px;
+    outline: none;
+    border: 2px solid;
+    border-color: #b4c7b2;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.DPRtitle{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#allDeliveryDetailsBox{
+    margin: 0 20px;
+}
+
+.deliveryInputText{
+    text-align: left;
+    padding-left: 10px;
+}
+
+.saveAndContiueButton{
+    background-color: #d0e9cc;
+}
+
 @media (max-width: 591px) {
     .nav__links{
         display: none;
@@ -606,5 +674,28 @@ button:active{
         padding: 0 32px;
     }
 
+    .mainCheckoutDiv{
+        display: block;
+        margin: auto auto 20px auto;
+    }
+
+    .basketBlock{
+        margin: 0 0 20px 0;
+    }
+
+    .checkOutMain{
+        padding: 10px ;
+    }
 }
 
+@media (max-width: 810px){
+    .deliveryMultiLine{
+        display: block;
+    }
+}
+
+@media (max-width: 1050px){
+    .allDeliveryDetailsBox{
+        margin: 0 5px;
+    }
+}
