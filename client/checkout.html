@@ -11,6 +11,7 @@
     <script src="https://kit.fontawesome.com/7d8f1910d8.js" crossorigin="anonymous"></script>
     <script src="app.js"></script>
     <script src="checkout.js"></script>
+    <script src="payment.js"></script>
     <script src="https://js.stripe.com/v3/"></script>
     <script
     src="https://code.jquery.com/jquery-3.3.1.js"
@@ -346,7 +347,14 @@
                         </div>
                     </div>
                 </div>
-                <h2>Payment</h2>
+                <div>
+                    <h2>Payment</h2>
+                    <form id="payment-form">
+                        <div id="payment-element"></div>
+                        <div id="error-messages"></div>
+                        <button>Pay</button>
+                    </form>
+                </div>
                 <h2>Review</h2>
             </div>
         </div>
