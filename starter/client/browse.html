@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/logo.svg">
+    <title>Plant Shop</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/browse.css">
+    <script src="https://kit.fontawesome.com/7d8f1910d8.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+    </script>
+    <script> 
+    $(function(){
+    $("#header").load("header.html"); 
+    $("#footer").load("footer.html"); 
+    });
+    </script> 
+</head>
+
+<body id="body">
+    <div id="header"></div>
+    <main>
+        <div class="browse-container">
+            <div class="browse-row">
+                <h1 class="section-title">Browse</h1>
+                <div class="browse__header">
+                    <p>Sort:</p>
+                    <select class="browse__drop-down-menu" name="" id="">
+                        <option value="default">Default</option>
+                        <option value="low-to-high">Low to High</option>
+                        <option value="high-to-low">High to Low</option>
+                    </select>
+                </div>
+                <div class="plants__wrapper">
+                    <div class="plant__card clickable" onclick="showPlant()">
+                        <figure class="plant__img--container">
+                            <img class="plant__img" src="./assets/peace-lily.png" alt="">
+                        </figure>
+                        <h3 class="plant__title">Peace Lily</h3>
+                        <h4 class="plant__price">£19.99</h4>
+                    </div>
+                    <div class="plant__card clickable" onclick="showPlant()">
+                        <figure class="plant__img--container">
+                            <img class="plant__img" src="./assets/areca-palm.png" alt="">
+                        </figure>
+                        <h3 class="plant__title">Areca Palm</h3>
+                        <h4 class="plant__price">£19.99</h4>
+                    </div>
+                    <div class="plant__card clickable" onclick="showPlant()">
+                        <figure class="plant__img--container">
+                            <img class="plant__img" src="./assets/swiss-cheese-plant.png" alt="">
+                        </figure>
+                        <h3 class="plant__title">Swiss Cheese Plant</h3>
+                        <h4 class="plant__price">£19.99</h4>
+                    </div>
+                    <div class="plant__card clickable" onclick="showPlant()">
+                        <figure class="plant__img--container">
+                            <img class="plant__img" src="./assets/kentia-palm.png" alt="">
+                        </figure>
+                        <h3 class="plant__title">Kentia P</h3>
+                        <h4 class="plant__price">£19.99</h4>
+                    </div>
+                    <div class="plant__card clickable" onclick="showPlant()">
+                        <figure class="plant__img--container">
+                            <img class="plant__img" src="./assets/peace-lily.png" alt="">
+                        </figure>
+                        <h3 class="plant__title">Peace Lily</h3>
+                        <h4 class="plant__price">£19.99</h4>
+                    </div>
+                    <div class="plant__card clickable" onclick="showPlant()">
+                        <figure class="plant__img--container">
+                            <img class="plant__img" src="./assets/areca-palm.png" alt="">
+                        </figure>
+                        <h3 class="plant__title">Areca Palm</h3>
+                        <h4 class="plant__price">£19.99</h4>
+                    </div>
+                    <div class="plant__card clickable" onclick="showPlant()">
+                        <figure class="plant__img--container">
+                            <img class="plant__img" src="./assets/swiss-cheese-plant.png" alt="">
+                        </figure>
+                        <h3 class="plant__title">Swiss Cheese Plant</h3>
+                        <h4 class="plant__price">£19.99</h4>
+                    </div>
+                    <div class="plant__card clickable" onclick="showPlant()">
+                        <figure class="plant__img--container">
+                            <img class="plant__img" src="./assets/kentia-palm.png" alt="">
+                        </figure>
+                        <h3 class="plant__title">Kentia P</h3>
+                        <h4 class="plant__price">£19.99</h4>
+                    </div>
+                    <div class="plant__card clickable" onclick="showPlant()">
+                        <figure class="plant__img--container">
+                            <img class="plant__img" src="./assets/peace-lily.png" alt="">
+                        </figure>
+                        <h3 class="plant__title">Peace Lily</h3>
+                        <h4 class="plant__price">£19.99</h4>
+                    </div>
+                    <div class="plant__card clickable" onclick="showPlant()">
+                        <figure class="plant__img--container">
+                            <img class="plant__img" src="./assets/areca-palm.png" alt="">
+                        </figure>
+                        <h3 class="plant__title">Areca Palm</h3>
+                        <h4 class="plant__price">£19.99</h4>
+                    </div>
+                    <div class="plant__card clickable" onclick="showPlant()">
+                        <figure class="plant__img--container">
+                            <img class="plant__img" src="./assets/swiss-cheese-plant.png" alt="">
+                        </figure>
+                        <h3 class="plant__title">Swiss Cheese Plant</h3>
+                        <h4 class="plant__price">£19.99</h4>
+                    </div>
+                    <div class="plant__card clickable" onclick="showPlant()">
+                        <figure class="plant__img--container">
+                            <img class="plant__img" src="./assets/kentia-palm.png" alt="">
+                        </figure>
+                        <h3 class="plant__title">Kentia P</h3>
+                        <h4 class="plant__price">£19.99</h4>
+                    </div>
+                    <div class="plant__card clickable" onclick="showPlant()">
+                        <figure class="plant__img--container">
+                            <img class="plant__img" src="./assets/peace-lily.png" alt="">
+                        </figure>
+                        <h3 class="plant__title">Peace Lily</h3>
+                        <h4 class="plant__price">£19.99</h4>
+                    </div>
+                    <div class="plant__card clickable" onclick="showPlant()">
+                        <figure class="plant__img--container">
+                            <img class="plant__img" src="./assets/areca-palm.png" alt="">
+                        </figure>
+                        <h3 class="plant__title">Areca Palm</h3>
+                        <h4 class="plant__price">£19.99</h4>
+                    </div>
+                    <div class="plant__card clickable" onclick="showPlant()">
+                        <figure class="plant__img--container">
+                            <img class="plant__img" src="./assets/swiss-cheese-plant.png" alt="">
+                        </figure>
+                        <h3 class="plant__title">Swiss Cheese Plant</h3>
+                        <h4 class="plant__price">£19.99</h4>
+                    </div>
+                    <div class="plant__card clickable" onclick="showPlant()">
+                        <figure class="plant__img--container">
+                            <img class="plant__img" src="./assets/kentia-palm.png" alt="">
+                        </figure>
+                        <h3 class="plant__title">Kentia P</h3>
+                        <h4 class="plant__price">£19.99</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div id="footer"></div>
+</body>
