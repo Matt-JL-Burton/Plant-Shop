@@ -120,10 +120,11 @@ public class Server {
             // Fulfill any orders, e-mail receipts, etc
             // To cancel the payment you will need to issue a Refund
             // (https://stripe.com/docs/api/refunds)
-            System.out.println("💰Payment received!");
+            // TODO: this is where I need to write calls to firebase to add order to database
+            System.out.println("Payment received!");
             break;
           case "payment_intent.payment_failed":
-            System.out.println("❌ Payment failed.");
+            System.out.println("Payment failed.");
             break;
           default:
             // Unexpected event type
