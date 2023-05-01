@@ -13,8 +13,34 @@ document.addEventListener('DOMContentLoaded',async () =>  {
         // body is used here to pass arguments from the client i.e product ID to get their price
     }).then(r => r.json())
 
+    const appearance = {
+        theme: 'none',
+        variables: {
+            borderRadius : "0px",
+            fontSizeBase: "18px",
+            fontFamily : 'Roboto, sans-serif',
+            colorPrimary : '#000000',
+            colorText : '#000000',
+            fontWeightNormal : '500',
+        },
+        rules:{
+            '.Input':{
+                border: '2px solid #b4c7b2',
+            },
+            '.Input:hover':{
+                border: '2px solid #99af97',
+            },
+            '.Input:focus':{
+                border: '2px solid #6a8767',
+                transition: 'none',
+                boxShadow: 'none',
+                outline:'none',
+            }
+        }
+    };
+
     // mount elements
-    const elements = stripe.elements({clientSecret});
+    const elements = stripe.elements({clientSecret, appearance});
     const paymentElement = elements.create('payment');
     paymentElement.mount('#payment-element');
     // Should add a line here to only display the pay button once the rest has loaded or make loading in look better

@@ -35,8 +35,8 @@
                 <h2>Basket</h2>
             </div>
             <div class="DPRBlock checkOutPageSection">  <!-- Delivery Payment & Review = DPR -->
-                <div class="deliveryDetailsContainerBox">
-                    <h2 class="DPRtitle">Delivery Details</h2>
+                <div class="containerBox">
+                    <h2 class="checkoutSectionTitle">Delivery Details</h2>
                     <div id="allDeliveryDetailsBox">
                         <div class="deliveryMultiLine">
                             <div class="deliveryDetailBox">
@@ -342,17 +342,20 @@
                         </div>
                         <div class="deliverySingleLine">
                             <div class="deliveryDetailBox">
-                                <button class="deliveryInput saveAndContiueButton" onclick="submitDeliveryDetails()"><u>Save & Continue</u></button>
+                                <button class="deliveryInput checkoutContinueButton" onclick="submitDeliveryDetails()">Save & Continue</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div>
-                    <h2>Payment</h2>
+                <div class="containerBox">
+                    <h2 class="checkoutSectionTitle">Payment</h2>
+                    <h6 id="stripeMessage">Powered by <a class="stripeLink" href="https://stripe.com" target="_blank">Stripe</a>© ensuring safety & security </h6>
                     <form id="payment-form">
                         <div id="payment-element"></div>
                         <div id="error-messages"></div>
-                        <button>Pay</button>
+                        <div class="flexHoriz">
+                            <button class="deliveryInput checkoutContinueButton" id="payButon">Pay</button> 
+                        </div>
                     </form>
                 </div>
                 <h2>Review</h2>

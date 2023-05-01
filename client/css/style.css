@@ -575,9 +575,12 @@ button:active{
     padding: 0px 20px 20px 20px;
 }
 
-.deliveryDetailsContainerBox{
+.containerBox{
     background-color: rgb(242, 244, 241);
     border-radius: 3px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 .deliveryMultiLine{
@@ -601,15 +604,21 @@ button:active{
     padding: 10px;
     border-radius: 0px;
     outline: none;
-    border: 2px solid;
-    border-color: #b4c7b2;
-    font-size: 14px;
+    border: 2px solid #b4c7b2;
+    font-size: 18px;
     margin-top: 5px;
 }
 
-.DPRtitle{
-    padding-top: 5px;
-    padding-bottom: 5px;
+.deliveryInput:hover{
+    border: 2px solid #99af97;
+}
+
+.deliveryInput:focus{
+    border: 2px solid #6a8767;;
+}
+
+.checkoutSectionTitle{
+    margin-bottom: 5px;
 }
 
 #allDeliveryDetailsBox{
@@ -621,8 +630,34 @@ button:active{
     padding-left: 10px;
 }
 
-.saveAndContiueButton{
+.checkoutContinueButton{
     background-color: #d0e9cc;
+}
+
+.checkoutContinueButton:hover{
+    border: 2px solid #6a8767;
+}
+
+#stripeMessage{
+    color: black;
+    text-align: center;
+}
+
+.stripeLink{
+    color: black;
+}
+
+#payment-form{
+    margin: 10px 25px 15px 25px;
+    display: none;
+}
+
+.flexHoriz{
+    display: flex;
+}
+
+#payButon{
+    margin-top: 20px;
 }
 
 @media (max-width: 591px) {
@@ -695,7 +730,7 @@ button:active{
 }
 
 @media (max-width: 1050px){
-    .allDeliveryDetailsBox{
+    #allDeliveryDetailsBox{
         margin: 0 5px;
     }
 }
